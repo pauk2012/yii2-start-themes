@@ -51,6 +51,12 @@ echo Menu::widget(
                 ]
             ],
             [
+                'label' => Yii::t('vova07/themes/admin', 'Classes'),
+                'url' => ['/klasses/default/index'],
+                'icon' => 'fa-calendar',
+                'visible' => Yii::$app->user->can('administrateKlasses') || Yii::$app->user->can('BViewKlasses'),
+            ],
+            [
                 'label' => Yii::t('vova07/themes/admin', 'Access control'),
                 'url' => '#',
                 'icon' => 'fa-gavel',
