@@ -57,6 +57,32 @@ echo Menu::widget(
                 'visible' => Yii::$app->user->can('administrateKlasses') || Yii::$app->user->can('BViewKlasses'),
             ],
             [
+                'label' => Yii::t('vova07/themes/admin', 'Accounts'),
+                'url' => ['/accounts/default/index'],
+                'icon' => 'fa-building-o',
+                'visible' => Yii::$app->user->can('administrateAccounts') || Yii::$app->user->can('BViewTrainers'),
+            ],
+            [
+                'label' => Yii::t('vova07/themes/admin', 'Trainers'),
+                'url' => ['/trainers/default/index'],
+                'icon' => 'fa-male',
+                'visible' => Yii::$app->user->can('administrateTrainers') || Yii::$app->user->can('BViewTrainers'),
+            ],
+            [
+                'label' => Yii::t('vova07/themes/admin', 'Halls'),
+                'url' => ['/halls/default/index'],
+                'icon' => 'fa-map-marker',
+                'visible' => Yii::$app->user->can('administrateHalls') || Yii::$app->user->can('BViewHalls'),
+            ],
+            [
+                'label' => Yii::t('vova07/themes/admin', 'Translations'),
+                'url' => ['/i18n/default/index'],
+                'icon' => 'fa-language',
+                'visible' => true// Yii::$app->user->can('administrateHalls') || Yii::$app->user->can('BViewHalls'),
+            ],
+
+
+            [
                 'label' => Yii::t('vova07/themes/admin', 'Access control'),
                 'url' => '#',
                 'icon' => 'fa-gavel',
