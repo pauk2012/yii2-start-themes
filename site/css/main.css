@@ -709,6 +709,9 @@ ul.tag-cloud li {
 .btn-social:hover {
   color: #fff;
 }
+.navbar-brand select {
+    font-size:60%;
+}
 .navbar-inverse {
   border: none;
 }

@@ -74,6 +74,13 @@ echo Menu::widget(
                 'icon' => 'fa-map-marker',
                 'visible' => Yii::$app->user->can('administrateHalls') || Yii::$app->user->can('BViewHalls'),
             ],
+
+            [
+                'label' => Yii::t('vova07/themes/admin', 'Taxonomy'),
+                'url' => ['/taxonomy/default/index'],
+                'icon' => 'fa-map-marker',
+                'visible' => Yii::$app->user->can('administrateTaxonomy') || Yii::$app->user->can('BViewTaxonomy'),
+            ],
             [
                 'label' => Yii::t('vova07/themes/admin', 'Translations'),
                 'url' => ['/i18n/default/index'],

@@ -29,9 +29,17 @@ use yii\widgets\Breadcrumbs;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?= Yii::$app->homeUrl ?>">
-                    <?= Yii::$app->name ?>
+                <span class="navbar-brand">
+                <a  href="<?= Yii::$app->homeUrl ?>">
+                    <?=("Classes <b>.pro</b>")?>
                 </a>
+                <select><option>Молдова</option>
+                    <option>Кишинев</option>
+                    <option>Тирасполь</option>
+
+                </select>
+                </span>
+
             </div>
             <div class="collapse navbar-collapse">
                 <?= $this->render('//layouts/top-menu') ?>
